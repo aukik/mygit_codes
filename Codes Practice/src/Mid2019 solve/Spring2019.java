@@ -1,5 +1,5 @@
 
-public class StudentTester
+public class Spring2019
 {
     public static void main(String[] args)
     {
