@@ -1,4 +1,4 @@
-package Lab05;
+package Assignment03;
 
 public class Dog {
     private String color = "Black";
