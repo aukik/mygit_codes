@@ -1,0 +1,8 @@
+package FinalSummer;
+
+
+interface Bike {
+    void speedUp(int increment);
+    void applyBrakes(int decrement);
+}
+
