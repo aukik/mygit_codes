@@ -1,0 +1,55 @@
+using System;
+
+
+    public class Program
+    {
+       public static void Main(string[] args)
+        {
+            Console.WriteLine("enter the limit");
+            int n = Convert.ToInt32(Console.ReadLine());
+            int[] arr = new int[n];
+             int flag=9245;
+             int count_flag=0;
+
+            for(int i=0;i<n;i++)
+            {
+				
+				
+				
+                Console.WriteLine("enter input  " + (i + 1));
+                arr[i] = Convert.ToInt32(Console.ReadLine());
+				 if(arr[i]==flag){
+                count_flag++;
+            }
+               
+              }
+			
+			 if(count_flag>0) {
+             Console.WriteLine(flag + " has been repeated " + (count_flag +1) +" times.");
+        }
+            
+ for (int i = 0; i < n; i++) {
+            int  dup=0;
+            if(arr[i]!=flag) {
+                for (int j = i + 1; j < n; j++) {
+                    if (arr[i] == arr[j]) {
+                        dup++;
+                        arr[j] = flag;
+                    }
+                }
+            }
+            if(arr[i]==flag){}
+            else if(dup==0){
+                 Console.WriteLine("Number "+arr[i]+" is not repeated");
+			}
+            else {
+              Console.WriteLine(arr[i]+" has been repeated "+(dup+1)+" times.");
+            }
+
+        }
+                Console.ReadLine();
+
+
+} 
+
+		}
